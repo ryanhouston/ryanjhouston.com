@@ -1,0 +1,17 @@
+---
+layout: base
+title: Ryan Houston
+---
+<div id="content">
+  {% if paginator.posts %}
+    {% for post in paginator.posts %}
+      {% include post_summary.html %}
+    {% endfor %}
+  {% else %}
+    {{ content }}
+  {% endif %}
+
+  {% if paginator.next_page or paginator.previous_page %}
+    {% include paginator.html %}
+  {% endif %}
+</div>

@@ -1,0 +1,19 @@
+<div class="entry-summary">
+
+  <div class="entry-header">
+    <span class="post-date">{{ post.date }}</span>
+    <a href="{{ post.url }}" class="post-link">
+      <h2 class="post-title">{{ post.title }}</h2>
+    </a>
+  </div>
+
+  <div class="entry-content">
+    {% if post.excerpt %}
+      <p>
+        {{ post.excerpt }} <a href="{{ post.url }}">Read more...</a>
+      </p>
+    {% else %}
+      {{ post.content }}
+    {% endif %}
+  </div>
+</div>
