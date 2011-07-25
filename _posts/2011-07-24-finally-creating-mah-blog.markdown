@@ -7,5 +7,5 @@ It could not be put off any longer. It is long overdue. I have finally created a
 
 The content of this blog will likely be a place to gather my own thoughts, document software development issues I tackle, and serve as a place to keep notes on my homebrewing experiments.
 
-This site is a project to learn something new and have something useful as a result. This site is built using [Jekyll](http://jeyllrb.com).
+This site is a project to learn something new and have something useful as a result. This site is built using [Jekyll](http://jekyllrb.com).
 

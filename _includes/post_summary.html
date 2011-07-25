@@ -1,7 +1,7 @@
-<div class="entry-summary">
+<div class="post">
 
-  <div class="entry-header">
-    <span class="post-date">{{ post.date }}</span>
+  <div class="post-header">
+    <span class="post-date">{{ post.date | date: "%B %d %Y" }}</span>
     <a href="{{ post.url }}" class="post-link">
       <h2 class="post-title">{{ post.title }}</h2>
     </a>
