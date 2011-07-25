@@ -3,7 +3,7 @@ title: Finally creating my web presence
 layout: post
 ---
 
-It could not be put off any longer. It is long overdue. I have finally created a personal blog. I don't expect to be overly vocal here and I don't expect much interest from anyone (seriously, why are you reading this?).
+It could not be put off any longer. This is long overdue. I have finally created a personal blog. I don't expect to be overly vocal here and I don't expect much interest from anyone (seriously, why are you reading this?).
 
 The content of this blog will likely be a place to gather my own thoughts, document software development issues I tackle, and serve as a place to keep notes on my homebrewing experiments.
 
