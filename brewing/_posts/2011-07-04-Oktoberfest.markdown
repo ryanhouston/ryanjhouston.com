@@ -2,6 +2,7 @@
 title: Oktoberfest/Marzen
 layout: post
 tags: [oktoberfest, marzen, lager, homebrewing]
+disqus-id: 2011-07-04-Oktoberfest
 ---
     BeerSmith Recipe Printout - http://www.beersmith.com
     Recipe: Oktoberfest
