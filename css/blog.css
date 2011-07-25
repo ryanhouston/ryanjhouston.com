@@ -85,6 +85,8 @@ a:visited {
   padding: 10px;
   border: 2px solid #999;
   -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
   margin-bottom: 25px;
 }
 
@@ -112,6 +114,10 @@ a:visited {
   text-decoration: none;
 	display: block;
   color: #d77223;
+}
+
+#tagline {
+  padding: .5em;
 }
 
 /*** Socials ***/
@@ -203,6 +209,8 @@ a:visited {
   padding: 10px;
   border: 2px solid #999;
   -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
   margin-bottom: 20px;
 }
 
