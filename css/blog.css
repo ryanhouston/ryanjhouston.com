@@ -52,6 +52,12 @@ p {
 	line-height: 22px;
 }
 
+a:link,
+a:visited {
+  color: #d77223;
+  text-decoration: none;
+}
+
 /*** Layout ***/
 #header {
 	margin: 0px auto;
@@ -65,13 +71,17 @@ p {
 }
 
 #sidebar {
-	float: left;
+  background: #434343;
+  padding: 10px;
+  border: 2px solid #999;
+  -webkit-border-radius: 4px;
+	float: right;
 	width: 215px;
+  font-size: .8em;
 }
 
 #content {
-	width: 720px;
-  margin: 0px auto;
+	width: 660px;
 }
 
 #footer {
@@ -193,8 +203,3 @@ p {
   color: #d77223;
 }
 
-.post a:link,
-.post a:visited {
-  color: #d77223;
-  text-decoration: none;
-}
