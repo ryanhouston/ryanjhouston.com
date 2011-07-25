@@ -1,0 +1,12 @@
+---
+layout: base
+---
+<div id="content">
+  {% for post in paginator.posts %}
+    {% include post_summary.html %}
+  {% endfor %}
+
+  {% if paginator.next_page or paginator.previous_page %}
+    {% include paginator.html %}
+  {% endif %}
+</div>

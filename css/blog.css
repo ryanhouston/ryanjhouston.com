@@ -28,7 +28,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 /*** General Settings ***/
 body {
-	background: #1b1919;
+	background: #2a2a2a;
 	color: #fff;
 	font-family: Georgia, serif;
 	font-size: 14px;
@@ -45,6 +45,10 @@ h1 {
 
 h2 {
   font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
 }
 
 p {
@@ -71,13 +75,17 @@ a:visited {
 }
 
 #sidebar {
-  background: #434343;
-  padding: 10px;
-  border: 2px solid #999;
-  -webkit-border-radius: 4px;
 	float: right;
 	width: 215px;
   font-size: .8em;
+}
+
+.sidebar-module {
+  background: #494949;
+  padding: 10px;
+  border: 2px solid #999;
+  -webkit-border-radius: 4px;
+  margin-bottom: 25px;
 }
 
 #content {
@@ -190,10 +198,11 @@ a:visited {
 }
 
 .post {
-  background: #434343;
+  background: #494949;
   padding: 10px;
   border: 2px solid #999;
   -webkit-border-radius: 4px;
+  margin-bottom: 20px;
 }
 
 .post-title {
@@ -203,3 +212,8 @@ a:visited {
   color: #d77223;
 }
 
+.post-date-header {
+  text-align: right;
+  font-size: .8em;
+  margin: 4px;
+}
