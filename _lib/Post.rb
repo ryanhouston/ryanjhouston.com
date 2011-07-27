@@ -18,7 +18,7 @@ class Post
   end
 
   def directory
-    @path ||= "/#{@category}/_posts/"
+    @path ||= File.dirname(__FILE__) + "/../#{@category}/_posts/"
   end
 
   def basename
@@ -32,7 +32,7 @@ class Post
   end
 
   def write_stub
-    stub_path = Dir.pwd + fullpath
+    stub_path = fullpath
     File.open(stub_path, "w") do |stub|
       stub.write(front_matter)
     end
