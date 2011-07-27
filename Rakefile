@@ -1,9 +1,12 @@
+require 'rake'
+
 task :default => 'build'
 
 desc "Create stub for new post"
 task :new_post do
-  # require 'lib/tasks/Post.rb'
-  # Post.write_stub(category, post_name)
+  require '_lib/Post.rb'
+  stub_path = Post.create_stub(ENV['title'], ENV['category'])
+  puts "Created stub: #{stub_path}"
 end
 
 desc "Clean dir structure. Empty /_site"
