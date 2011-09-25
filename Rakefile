@@ -19,8 +19,11 @@ task :build => :clean do
   sh "jekyll"
 end
 
-desc "Deploy files to server (would be nice to use config)"
+desc "Deploy files to server"
 task :deploy => :build do
+  require '_lib/Deployer.rb'
+  deployer = Deployer.new
+  deployer.deploy_to :live
 end
 
 namespace :server do
