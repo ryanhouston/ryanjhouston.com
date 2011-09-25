@@ -1,6 +1,0 @@
-pagination: true
-paginate: 5
-paginator.per_page: 5
-pygments: true
-permalink: pretty
-exclude: ['Rakefile']
