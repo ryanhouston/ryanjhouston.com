@@ -60,3 +60,12 @@ After 36 hours there was about 2 inches of visible krausen and average activity 
 
 ### 2011-09-27 (3 days)
 Fermentation has slowed. Still plenty of krausen but bubbling and activity has slowed. Temperature holding at 72 in water bath.
+
+### 2011-10-26
+Recorded final gravity of 1.012 when I kegged this beer about 10 days ago. Today
+this beer went in the kegerator. It has been on the spare CO2 tank at 26PSI for
+10 days at 68F. Tasting quite pleasing so far, maybe still a little green. The
+taste is not too heavy but with a lingering hint of chocolate fudge. Not as much
+hop bitterness as I expected for the amount of bittering hops used. Quite a nice
+balance.
+
