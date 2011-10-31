@@ -8,13 +8,17 @@ class Deployer
     env = env.to_s
     @hostname = config['deploy'][env]['hostname']
     @username = config['deploy'][env]['username']
-    @password = config['deploy'][env]['password']
-    @repo_path = config['deploy'][env]['repo_path']
+    @dest_path = config['deploy'][env]['dest_path']
   end
 
   def deploy_to(env)
     load_config env
-puts "ssh://#{@username}:#{@password}@#{@hostname}#{@repo_path}"
+    puts "Deploying site to #{env} environment"
+
+    site_dir = File.dirname(__FILE__) + '/../_site/';
+    cmd = "rsync -avz --delete #{site_dir} #{@username}@#{@hostname}:#{@dest_path}"
+    puts cmd
+    `#{cmd}`
   end
 
 end
