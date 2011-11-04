@@ -8,7 +8,6 @@ disqus-id: 2011-10-10-robust-porter
 
 
 ## BeerSmith Export
-    BeerSmith Recipe Printout - http://www.beersmith.com
     Recipe: Robust Porter
     Brewer: Ryan Houston
     Style: Robust Porter
@@ -51,7 +50,7 @@ disqus-id: 2011-10-10-robust-porter
 ## Brew Day Notes
 
 ### Grist
-Had to sub in some pilsner because I ran out of normal 2-row. Still have about 25lbs of pilsner left ot use up.
+Had to sub in some pilsner malt because I ran out of normal 2-row. Still have about 25lbs of pilsner left to use up.
 
 ### Mash
 Single Step, Double Batch Sparge
@@ -74,16 +73,18 @@ Total Volume: 4.5 gal
 - Rest Temp:
 
 #### Round 2
-- Temp:
+- Temp: 170F
 - Volume: 2.25 gal
 
 
 ### Boil
-- Length: 60 min.
-- Pre-Boil Volume:
-- Pre-Boil Gravity:
-- Final Volume:
-- Final Gravity:
+- Length: 80 min.
+- Pre-Boil Volume:  8.1 gallons
+- Pre-Boil Gravity: 1.048
+- Final Volume:     5.5 gallons
+- Final Gravity:    1.065
+
+Had to boil an extra 20 min to boil off some extra volume
 
 ### Cooling / Pitching
 - Cool down:
