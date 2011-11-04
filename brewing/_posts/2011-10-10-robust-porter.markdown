@@ -4,6 +4,10 @@ layout: post
 category: brewing
 date: 2011-10-10
 disqus-id: 2011-10-10-robust-porter
+OG: 1.065
+FG: 1.014
+ABV: 6.66%
+
 ---
 
 
@@ -87,5 +91,14 @@ Total Volume: 4.5 gal
 Had to boil an extra 20 min to boil off some extra volume
 
 ### Cooling / Pitching
-- Cool down:
+- Cooled down to 72F
 - Pitch 1.4L starter of Wyeast 1056
+
+### Fermentation
+Sat in water bath for 2 weeks at 67-68F. Krausen visible after about 36 hours. The Ringwood ale yeast is a known slow starter so this was not a worry.
+
+### Kegged 2011-11-03
+Terminal gravity hit 1.014 exactly as planned. Nice roasted malt flavors. Possibly a touch of hot/fusel alcohols or some sharp/acrid flavors from the darker malts. Will likely age nicely.
+
+Currently sitting around 68F on gas at 26psi.
+
