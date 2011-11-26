@@ -6,25 +6,34 @@
     <meta name="keywords" content="ryan houston, homebrewing, software developer" />
     <meta name="description" content="Software development, homebrewing, and the life that happens in between" />
 
+    <link rel="stylesheet/less" href="/css/bootstrap/bootstrap.less"/>
+    <script src="/js/less-1.1.5.min.js"></script>
     <link rel="stylesheet" href="/css/blog.css" type="text/css"/>
   </head>
   <body>
-    <div id="container">
-      <div id="header">
-        <a href="/"><h1 id="logo">Ryan Houston</h1><img src="/images/houston_banner3.png"/></a>
-        <div id="tagline">
-			<em>Software development, homebrewing, and life that happens in between.</em>
-		</div>
-
+    <div id="container" class="container">
+      <div id="header" class="row">
+        <div class="row span16">
+          <a href="/">
+            <h1 id="logo">Ryan Houston</h1>
+            <img src="/images/houston_banner3.png"/>
+          </a>
+        </div>
+        <div id="tagline" class="row span16">
+          <em>Software development, homebrewing, and life that happens in between.</em>
+        </div>
       </div>
 
-      {% include sidebar.html %}
+      <div class="row">
+        {{ content }}
 
-      {{ content }}
+        {% include sidebar.html %}
+      </div>
 
-      <div class="clear"></div>
-      <div id="footer">
-        <p>&copy; 2011 Ryan Houston. All Rights Reserved.</p>
+      <div id="footer" class="row">
+        <div class="span16">
+          <p>&copy; 2011 Ryan Houston. All Rights Reserved.</p>
+        </div>
       </div>
 
     </div>
