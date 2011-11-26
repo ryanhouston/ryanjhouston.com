@@ -7,7 +7,7 @@ disqus-id: 2011-10-30-flight-of-the-bumble-beer-ipa
 ---
 
 ## BeerSmith Recipe Printout
-    Recipe: Flight of the Bumble Bee IPA
+    Recipe: Flight of the Bumble Beer IPA
     Brewer: Ryan Houston
     Asst Brewer: 
     Style: American IPA
