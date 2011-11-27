@@ -1,0 +1,12 @@
+<h2 class="post-title">
+  <a href="{{ page.url }}" class="post-link">{{ page.title }}</a>
+</h2>
+<div class="post-header">
+  {% for category in page.categories %}
+    <a href="/{{ category }}" class="tag"> {{ category }} </a>
+  {% endfor %}
+  <div class="pull-right">
+    <em class="post-date">{{ page.date | date: "%B %d %Y" }}</em>
+  </div>
+</div>
+

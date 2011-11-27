@@ -4,7 +4,7 @@ title: Ryan Houston
 ---
 <div id="content" class="span12">
   {% if paginator.posts %}
-    {% for post in paginator.posts %}
+    {% for page in paginator.posts %}
       {% include post_summary.html %}
     {% endfor %}
   {% else %}

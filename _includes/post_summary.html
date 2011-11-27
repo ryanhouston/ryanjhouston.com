@@ -1,21 +1,14 @@
 <div class="post">
 
-  <div class="post-header">
-    <div class="post-date-header">
-      <em><span class="post-date">{{ post.date | date: "%B %d %Y" }}</span></em>
-    </div>
-    <a href="{{ post.url }}" class="post-link">
-      <h2 class="post-title">{{ post.title }}</h2>
-    </a>
-  </div>
+  {% include post_heading.html %}
 
   <div class="entry-content">
-    {% if post.excerpt %}
+    {% if page.excerpt %}
       <p>
-        {{ post.excerpt }} <a href="{{ post.url }}">Read more...</a>
+        {{ page.excerpt }} <a href="{{ post.url }}">Read more...</a>
       </p>
     {% else %}
-      {{ post.content }}
+      {{ page.content }}
     {% endif %}
   </div>
 </div>

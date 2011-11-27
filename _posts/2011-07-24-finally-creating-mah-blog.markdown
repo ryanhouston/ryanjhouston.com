@@ -2,6 +2,8 @@
 title: Finally creating my web presence
 layout: post
 disqus-id: 2011-07-24-finally-creating-mah-blog
+categories:
+  - ramblings
 ---
 
 It could not be put off any longer. This is long overdue. I have finally created a personal blog. I don't expect to be overly vocal here and I don't expect much interest from anyone (seriously, why are you reading this?).
