@@ -13,7 +13,7 @@ One of the good parts of Bootstrap is how easy it is to learn to use the [grid s
 Bootstrap comes with a `variables.less` file that allows you to set some variables for theming. Even with these variables Bootstrap seems to assume you want a white background with black and gray text. To get around this I had to make a few changes.
 
 First I had to edit `scaffolding.less`:
-{% highlight css+mako  linenos %}
+{% highlight css linenos %}
 body {
   background-color: @baseColor;
   margin: 0;
@@ -25,7 +25,7 @@ body {
  I updated the `background-color` to use the `@baseColor` variable set in `variables.less`. I also had to change the `color` attribute to `@white` to reflect the fact I'm using a dark background.
 
 The other notable change was to `variables.less`:
-{% highlight css+mako linenos %}
+{% highlight css linenos %}
 // Grays
 @black:             #494949;
 @grayDark:          lighten(@black, 90%);
