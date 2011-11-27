@@ -27,7 +27,7 @@
       <ul id="category-list">
       {% for category in site.categories %}
         <li>
-          <a href="/{{ category | first }}">{{ category | first }}</a>
+          <a href="/categories/{{ category | first }}">{{ category | first }}</a>
           ( {{ category | last | size }} )
         </li>
       {% endfor %}
