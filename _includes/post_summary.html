@@ -5,8 +5,9 @@
   <div class="entry-content">
     {% if page.excerpt %}
       <p>
-        {{ page.excerpt }} <a href="{{ post.url }}">Read more...</a>
+        {{ page.excerpt }}
       </p>
+      <a href="{{ page.url }}">Read more...</a>
     {% else %}
       {{ page.content }}
     {% endif %}

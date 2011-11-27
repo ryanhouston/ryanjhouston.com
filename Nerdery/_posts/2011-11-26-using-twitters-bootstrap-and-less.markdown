@@ -4,6 +4,8 @@ layout: post
 category: Nerdery
 date: 2011-11-26
 disqus-id: 2011-11-26-using-twitters-bootstrap-and-less
+excerpt:
+  I have to admit this site has been in bad shape for quite some time now. I decided to spend some time between turkey sandwiches this Thanksgiving weekend to fix it up a little. I'm not much of a designer so the thoughts of fixing up all the CSS was not very appealing to me. I decided to give Twitter's Bootstrap a try and hope that would take care of the hard parts while giving me a chance to try out LESS at the same time.
 ---
 
 I have to admit this site has been in bad shape for quite some time now. I decided to spend some time between turkey sandwiches this Thanksgiving weekend to fix it up a little. I'm not much of a designer so the thoughts of fixing up all the CSS was not very appealing to me. I decided to give [Twitter's Bootstrap][twitter-bootstrap] a try and hope that would take care of the hard parts while giving me a chance to try out [LESS][less-css] at the same time.
