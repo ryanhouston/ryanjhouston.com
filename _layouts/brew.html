@@ -27,12 +27,12 @@ layout: post
     <div class="row">
       <div class="span3">
         <span class="label">Boil Size</span>
-        <span class="pull-right">{{ page.beer.vitals.boil-size }}</span>
+        <span class="pull-right">{{ page.beer.boil.pre-volume }}</span>
       </div>
 
       <div class="span3">
         <span class="label">Boil Length</span>
-        <span class="pull-right">{{ page.beer.vitals.boil-length }}</span>
+        <span class="pull-right">{{ page.beer.boil.length }}</span>
       </div>
     </div>
 
@@ -84,7 +84,11 @@ layout: post
   {% if page.beer.mash %}
   <hr />
   <div id="brew-log-mash">
-    <h3>Mash</h3>
+    <div class="brew-section-header">
+      <h3 class="span1">Mash</h3>
+      <em>{{ page.beer.mash.description }}</em>
+    </div>
+    <br />
 
     <div class="row">
       <div class="span4">
@@ -109,6 +113,22 @@ layout: post
         <span class="pull-right">{{ page.beer.mash.rest-temp-actual }}</span>
       </div>
     </div>
+
+    <br />
+    {% for round in page.beer.sparges %}
+      <strong>Sparge Round {{ forloop.index }}</strong>
+      <div class="row">
+        <div class="span4">
+          <span class="label">Sparge Volume</span>
+          <span class="pull-right">{{ round.volume }}</span>
+        </div>
+
+        <div class="span4">
+          <span class="label">Sparge Temperature</span>
+          <span class="pull-right">{{ round.temperature }}</span>
+        </div>
+      </div>
+    {% endfor %}
 
   </div>
   {% endif %}

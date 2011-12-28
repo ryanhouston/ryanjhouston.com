@@ -10,8 +10,6 @@ beer:
     style:        American IPA
     type:         All Grain
     batch-size:   5.5 gal
-    boil-size:    7.53 gal
-    boil-length:  60 min
     OG-target:    1.063
     OG-actual:    1.061
     FG-target:    "~"
@@ -19,39 +17,32 @@ beer:
     abv-actual:   6.6%
     IBUs:         83
     SRM:          9.1
+
   mash:
-    strike-volume:    5.05 gal
-    strike-temp:      165F
-    rest-temp-target: 152F
-    rest-temp-actual: 153F
-    length:           60 min
-  sparge:
-    round-1:
-      volume:       2.25 gal
-      temperature:  190F
-    round-2:
-      volume:       2.25 gal
-      temperature:  170F
+    description:        "Single infusion batch sparge"
+    water-grist-ratio:  0.38
+    strike-volume:      5.05 gal
+    strike-temp:        165F
+    rest-temp-target:   152F
+    rest-temp-actual:   153F
+    length:             60 min
+
+  sparges:
+    - volume:           2.25 gal
+      temperature:      190F
+    - volume:           2.25 gal
+      temperature:      170F
+
   boil:
     length:               60 min
-    pre-volume:
+    pre-volume:           7.52 gal
     pre-gravity-target:
     pre-gravity-actual:
     post-volume:
 
 ---
 
-#### BeerSmith Recipe Printout
-    Recipe Specifications
-    --------------------------
-    Batch Size: 5.50 gal      
-    Boil Size: 7.53 gal
-    Estimated OG: 1.063 SG
-    Estimated Color: 9.1 SRM
-    Estimated IBU: 83.0 IBU
-    Brewhouse Efficiency: 72.00 %
-    Boil Time: 60 Minutes
-    
+#### Recipe Printout
     Ingredients:
     ------------
     Amount        Item                                      Type         % or IBU      
@@ -68,26 +59,8 @@ beer:
     1.25 oz       Falconer's Flight [10.50 %]  (5 min)      Hops         8.2 IBU       
     1.00 items    Whirlfloc Tablet (Boil 15.0 min)          Misc                       
     1 Pkgs        American Ale II (Wyeast Labs #1272) [StartYeast-Ale                  
-    
-    
-    Mash Schedule: Single Infusion, Light Body, Batch Sparge
-    Total Grain Weight: 13.25 lb
-    ----------------------------
-    Single Infusion, Light Body, Batch Sparge
-    Step Time     Name               Description                         Step Temp     
-    75 min        Mash In            Add 5.04 gal of water at 163.4 F    152.0 F       
 
 
 #### Yeast starter
 No starter makes me a sad panda. I can't get to the LHBS during the week so I could pick up any yeast the day before brewday and didn't have time to make a starter.
-
-#### Mash
-- Prepare strike water with 5.05 gal @ 165F
-- Desired Mash Temp was 152F, hit 153.5F, gave one more good stir and closed up the MLT at 1:15pm.
-- Start drain first runnings at 2:15pm. Recirculate til clear, then drain into boil kettle with 1.25oz of Falconer's Flight hops.
-
-#### Sparge (Two round batch sparge)
-- Total sparge water: 4.5 gal
-- First round sparge with 2.25 gal at 190F. Looking to bring grain bed up to 168-170F.
-- Second round sparge with 2.25 gal at 170F.
 
