@@ -8,6 +8,7 @@ disqus-id: 2011-10-30-flight-of-the-bumble-beer-ipa
 beer:
   vitals:
     style:        American IPA
+    type:         All Grain
     batch-size:   5.5 gal
     boil-size:    7.53 gal
     boil-length:  60 min
@@ -41,13 +42,6 @@ beer:
 ---
 
 #### BeerSmith Recipe Printout
-    Recipe: Flight of the Bumble Beer IPA
-    Brewer: Ryan Houston
-    Asst Brewer: 
-    Style: American IPA
-    TYPE: All Grain
-    Taste: (35.0) 
-    
     Recipe Specifications
     --------------------------
     Batch Size: 5.50 gal      
