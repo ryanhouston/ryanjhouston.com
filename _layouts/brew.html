@@ -1,0 +1,112 @@
+---
+layout: post
+---
+
+<div class="brew-session">
+
+  {% if page.beer.vitals %}
+  <h3>{{ page.beer.vitals.style }}</h3>
+  <hr />
+
+  <h4>Vitals</h4>
+
+  <div class="beer-vitals">
+
+    <div class="span3">
+      <span class="label">Batch Size</span>
+      <span class="pull-right">{{ page.beer.vitals.batch-size }}</span>
+    </div>
+
+    <div class="row">
+      <div class="span3">
+        <span class="label">Boil Size</span>
+        <span class="pull-right">{{ page.beer.vitals.boil-size }}</span>
+      </div>
+
+      <div class="span3">
+        <span class="label">Boil Length</span>
+        <span class="pull-right">{{ page.beer.vitals.boil-length }}</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="span3">
+        <span class="label">IBUs</span>
+        <span class="pull-right">{{ page.beer.vitals.IBUs }}</span>
+      </div>
+
+      <div class="span3">
+        <span class="label">SRM</span>
+        <span class="pull-right">{{ page.beer.vitals.SRM }}</span>
+      </div>
+    </div>
+
+    <div class="row clearfix">
+      <div class="span3">
+        <span class="label">Expected SG</span>
+        <span class="pull-right">{{ page.beer.vitals.OG-target }} </span>
+      </div>
+
+      <div class="span3">
+        <span class="label">Actual SG</span>
+        <span class="pull-right">{{ page.beer.vitals.OG-actual }}</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="span3">
+        <span class="label">Expected FG</span>
+        <span class="pull-right">{{ page.beer.vitals.FG-target }}</span>
+      </div>
+
+      <div class="span3">
+        <span class="label">Actual FG</span>
+        <span class="pull-right">{{ page.beer.vitals.FG-actual }}</span>
+      </div>
+
+      <div class="span3">
+        <span class="label">Actual %ABV</span>
+        <span class="pull-right">{{ page.beer.vitals.abv-actual }}</span>
+      </div>
+    </div>
+
+  </div>
+
+  {% endif %}
+
+  {% if page.beer.mash %}
+  <hr />
+  <div id="brew-log-mash">
+    <h3>Mash</h3>
+
+    <div class="row">
+      <div class="span4">
+        <span class="label">Strike Water Volume</span>
+        <span class="pull-right">{{ page.beer.mash.strike-volume }}</span>
+      </div>
+
+      <div class="span4">
+        <span class="label">Target Mash Temperature</span>
+        <span class="pull-right">{{ page.beer.mash.rest-temp-target }}</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="span4">
+        <span class="label">Strike Water Temperature</span>
+        <span class="pull-right">{{ page.beer.mash.strike-temp }}</span>
+      </div>
+
+      <div class="span4">
+        <span class="label">Actual Mash Temperature</span>
+        <span class="pull-right">{{ page.beer.mash.rest-temp-actual }}</span>
+      </div>
+    </div>
+
+  </div>
+  {% endif %}
+
+  {{ content }}
+
+</div>
+
