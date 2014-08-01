@@ -29,11 +29,11 @@ end
 namespace :server do
   desc "Start local server"
   task :start do
-    sh "jekyll --server"
+    sh "jekyll serve"
   end
 
   desc "Start local server with auto-update"
   task :auto do
-    sh "jekyll --server --auto"
+    sh "jekyll serve --watch"
   end
 end
