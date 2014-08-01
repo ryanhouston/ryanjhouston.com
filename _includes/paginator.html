@@ -1,7 +1,7 @@
 <div class="navigator">
 
   {% if paginator.previous_page %}
-    <a href="/page{{ paginator.previous_page }}" class="previous-page">Newer Posts</a>
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="previous-page">Newer Posts</a>
   {% endif %}
 
   {% if paginator.next_page %}
@@ -9,3 +9,4 @@
   {% endif %}
 
 </div>
+
