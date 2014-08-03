@@ -2,6 +2,7 @@ exclude:
   - Rakefile
   - Gemfile
   - Gemfile.lock
-paginate:   5
+markdown: kramdown
+paginate: 5
 timezone: America/New_York
 
