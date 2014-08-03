@@ -3,7 +3,7 @@
 </h2>
 <div class="post-header">
   {% for category in page.categories %}
-    <a href="{{ site.url }}/categories/{{ category }}" class="tag"> {{ category }} </a>
+    <a href="/categories/{{ category }}" class="tag"> {{ category }} </a>
   {% endfor %}
   <div class="pull-right">
     <em class="post-date">{{ page.date | date: "%B %d %Y" }}</em>
