@@ -1,29 +1,13 @@
 require 'rake'
+require 'tmpdir'
+require 'jekyll'
 
-task :default => 'build'
 
 desc "Create stub for new post"
 task :new_post do
   require '_lib/Post.rb'
   stub_path = Post.create_stub(ENV['title'], ENV['category'])
   puts "Created stub: #{stub_path}"
-end
-
-desc "Clean dir structure. Empty /_site"
-task :clean do
-  sh "rm -rf _sites/*"
-end
-
-desc "Exec jekyll"
-task :build => :clean do
-  sh "jekyll"
-end
-
-desc "Deploy files to server"
-task :deploy => :build do
-  require '_lib/Deployer.rb'
-  deployer = Deployer.new
-  deployer.deploy_to :live
 end
 
 namespace :server do
@@ -37,3 +21,35 @@ namespace :server do
     sh "jekyll serve --watch"
   end
 end
+
+
+# :generate and :publish tasks lifted from:
+# http://blog.nitrous.io/2013/08/30/using-jekyll-plugins-on-github-pages.html
+
+desc "Generate blog files"
+task :generate do
+  Jekyll::Site.new(Jekyll.configuration({
+    "source"      => ".",
+    "destination" => "_site"
+  })).process
+end
+
+
+desc "Generate and publish blog to gh-pages"
+task :publish => [:generate] do
+  Dir.mktmpdir do |tmp|
+    system "mv _site/* #{tmp}"
+    system "git checkout -B gh-pages"
+    system "rm -rf *"
+    system "mv #{tmp}/* ."
+    message = "Site updated at #{Time.now.utc}"
+    system "git add ."
+    system "git commit -am #{message.shellescape}"
+    system "git push origin gh-pages --force"
+    system "git checkout master"
+    system "echo done"
+  end
+end
+
+task :default => 'generate'
+
