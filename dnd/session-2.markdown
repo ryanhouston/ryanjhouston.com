@@ -1,0 +1,34 @@
+---
+title: Dungeons & Dragons - Session 2 - Cragmaw Hideout
+layout: post
+date: 2014-08-22
+---
+
+## Cragmaw Hideout
+
+1. Cave Mouth
+  * Goblins in area 2 are supposed to be keeping watch but are lazy
+    * Goblins only notice if party makes a lot of noise
+    * Goblins have 3/4 cover if they engage
+
+2. Goblin Blind
+  * 2 Goblins keeping watch. Bored (disadvantage)
+  * Goblins notice party when they cross stream. Open fire with bows.
+  * Characters moving stealthy and scouting can surprise Goblins
+    * Dexterity (Stealth) check agains Goblins' passive Wisdom (Perception)
+
+3. Kennel
+  * 3 *wolves*. Only 2 are seen.
+  * Wolves can't reach party when party is on steps.
+  * Character can calm wolves with DC 15 Wisdom (Animal Handling)
+  * Give wolves food drops DC check to 10
+  * *Fissure* up 30 feet to area 8
+    * DC 10 Strength (Athletics) check.
+      * Success moves 1/2 speed up or down the shaft
+      * 6-9 is stuck
+      * 5 or less falls and takes 1d6 bludgeoning damage landing prone
+  * Wolves attempt DC 15 Strength check each round player is in sight
+    * first success loosens rod to a DC 10
+    * second success yanks rod loose and wolves are free
+  * Goblin or Bugbear can use action to release one wolf from it's chain
+

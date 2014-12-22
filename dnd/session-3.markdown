@@ -1,0 +1,71 @@
+---
+title: Dungeons & Dragons - Session 3 - Cragmaw Hideout (continued)
+layout: post
+date: 2014-09-11
+---
+
+In the previous session the party found a shortcut to the Dungeon Boss area and
+suffered a TPK.  The party could roll new characters or restart from a previous
+point in the story before they started the encounter which killed them.
+Instead of dying the characters could discover that they were actually knocked
+unconcious and taken prisoner. When they awake they discover they have been
+taken captive and are locked up with *Sildar Hallwinter*! Their weapons have
+been taken from them and are in a pile on the other side of the room, guarded
+by goblins. The players wake up after a 4-hour short-rest while the guards are
+asleep. A key hangs on the wall near the sleeping guard.
+
+  * Players just came out of a short-rest (4 hours)
+    * They are prisoner and are being tormented but are left alone for a 4-hour
+      period which is actually a long-rest for the wizard and a short-rest for
+      the rest of the crew.
+  * How can the players escape the lock-up?
+    * I expect the Wizard to save them... again. The Mage Hand cantrip can be
+      to grab the key near the sleeping guard and unlock their shackles.
+    * The Halfling could slip out and use the lockpicks from his *thieves tools*
+      to free the party. Has advantage.
+
+## Party Log
+
+The players came out of a short-rest and rolled a hit dice to regain HP. The
+Wizard came back to full-strength and regained all spell slots.
+
+Wizard Sleeves decided to use the Mage Hand cantrip to summon the key from the
+wall and unlock the cell. The Dildo, the Rogue, then proceeded to sneak out of
+the cell to grab the Adventureres weapons and equipment from across the room.
+Upon equiping their armor Dildo snuck up on the sleeping Goblin guarding their
+cell and attacked.
+
+The adventurers free Sildar, who was locked up with them, and turned to fight
+the other five Goblins in the lower area of the room. Some ranged attacks
+took out the front guard while Gouranga the Cleric moved forward and invoked
+a spell to intimidate the other Goblins. Upon hearing the thunderous threats
+of Gouranga which shook the floor like an earthquake, the 3 Goblins in the back
+ran to hide in the tunnel opening of the room. Gouranga took a hit from the
+one remaining Goblin in the northern lower area of the room before the Goblin
+was picked off with an arrow by Grundle the Fighter.
+
+The adventurers were then safe to talk to Sildar and learn what he knows while
+Grundle kept his bow ready and watched the 3 Goblins in the tunnel. Sildar told
+the group he heard the Black Spider took Gundren Rockseeker and his map of Wave
+Echo Cave to Cragmaw Castle but doesn't really know where that is or who this
+Black Spider person is. Sildar tells the group he'll pay them 50gp to escort
+him to Phandalin since that is the closest town. He also intends to investigate
+what happened to the human wizard named Iarno Albrek who was sent there two
+months ago but hasn't been heard from.
+
+The group proceeds to clear the cave of goblins, including Klarg the Bugbear
+without too much difficulty. They find some crates of supplies with the image
+of a blue lion on them, the symbol of Lionshield Coster, a merchant in
+Phandalin. The group decides to take the supplies back to Phandalin on the wagon.
+
+At this point the PCs each earned 275 XP and set up camp for the night in front
+of the cave to take a long-rest before setting out for Phandalin.
+
+## Up Next!
+
+Start next round off making sure everyone rolls hit dice to increase their
+Maximum Hit Points and understands the abilities gained at Level 2. WizardSleeves
+and Gouranga should copy new spells their spellbook.
+
+Check if any member of the party has any ties in Phandalin.
+
