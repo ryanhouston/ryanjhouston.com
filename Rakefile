@@ -2,10 +2,11 @@ require 'rake'
 require 'tmpdir'
 require 'jekyll'
 
+$LOAD_PATH.unshift('_lib')
 
 desc "Create stub for new post"
 task :new_post do
-  require '_lib/Post.rb'
+  require 'post'
   stub_path = Post.create_stub(ENV['title'], ENV['category'])
   puts "Created stub: #{stub_path}"
 end

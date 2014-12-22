@@ -18,7 +18,7 @@ class Post
   end
 
   def directory
-    @path ||= File.dirname(__FILE__) + "/../#{@category}/_posts/"
+    @path ||= File.dirname(__FILE__) + "/../_posts/#{@category}/"
   end
 
   def basename
@@ -47,7 +47,6 @@ class Post
       content += "category: #{category}\n"
     end
     content += "date: " + Date.today.to_s + "\n"
-    content += "disqus-id: #{basename}\n"
     content += "---\n"
     content
   end
