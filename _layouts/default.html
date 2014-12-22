@@ -3,15 +3,6 @@ layout: base
 title: Ryan Houston
 ---
 <div id="content" class="span12">
-  {% if paginator.posts %}
-    {% for page in paginator.posts %}
-      {% include post_summary.html %}
-    {% endfor %}
-  {% else %}
-    {{ content }}
-  {% endif %}
-
-  {% if paginator.next_page or paginator.previous_page %}
-    {% include paginator.html %}
-  {% endif %}
+  {{ content }}
 </div>
+
