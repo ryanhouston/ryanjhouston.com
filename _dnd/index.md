@@ -1,6 +1,7 @@
 ---
 title: Dunegeons & Dragons
 layout: post
+permalink: /dnd/index.html
 ---
 
 ## The Lost Mine of Phandelver

@@ -1,6 +1,7 @@
 ---
 title: Dunegeons & Dragons - Player Overviews
 layout: post
+permalink: /dnd/player-overviews.html
 ---
 
 ## Queen Wizard Sleeves of the Nudiverse (Jess)
