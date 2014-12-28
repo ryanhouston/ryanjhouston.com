@@ -12,11 +12,14 @@ All they know of the hideout is the boss is there who is a wizard and he has
 "tall, furry monsters with big ears" (bugbears) working for him.
 
 ### Armory
-Did anyone take stuff from the armory? Spears, swords, crossbows, and bolts.
-Party goes through secret door into the storeroom/work area which opens into
-the crevasse/cave area.
+The group moves out of the slave pens through the north door of the crypt room
+and enters an armory room. **Dildo and Wizard Sleeves grab light crossbows and
+quivers of bolts**. The group, now at a dead-end, inspects the hallway and finds
+a secret door opening into a storeroom/work area which is at the north end of
+the crevasse/cave area where they entered the hideout.
 
 ### Crevasse Redux
-Just walk on through the crevasse down to the hallway at the bottom west wall.
+Group walks on through the crevasse down to the hallway on the bottom west wall.
+They ignore the door on the south end of the hall and listen at the north door.
 
 
