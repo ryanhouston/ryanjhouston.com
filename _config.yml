@@ -3,7 +3,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
 markdown: kramdown
-paginate: 5
 timezone: America/New_York
 collections:
   dnd:
