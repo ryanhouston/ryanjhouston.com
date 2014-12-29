@@ -1,6 +1,7 @@
 ---
 title: Dunegeons & Dragons
 layout: post
+category: dnd
 permalink: /dnd/index.html
 ---
 
@@ -19,10 +20,7 @@ permalink: /dnd/index.html
 
 ## Session Log
 
-  * [Session 1](/dnd/session-1.html) - 2014-07-12: Part 1: Goblin Arrows
-  * [Session 2](/dnd/session-2.html) - 2014-08-22: Cragmaw Hideout
-  * [Session 3](/dnd/session-3.html) - 2014-09-11: Cragmaw Hideout (Cont.)
-  * [Session 4](/dnd/session-4.html) - 2014-10-07: Part 2: Phandalin
-  * [Session 5](/dnd/session-5.html) - 2014-11-16: Phandalin (Cont.)
-  * [Session 6](/dnd/session-6.html) - 2014-12-07: Redbrand Hideout
+{% for session in site.categories.dnd reversed %}
+  * {{ session.date | date: "%Y-%m-%d" }} [{{ session.title }}]({{ session.url }})
+{% endfor %}
 
