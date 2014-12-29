@@ -4,12 +4,15 @@ title: ryanjhouston.com
 ---
 
 <div id="content" class="span12">
-  {% for page in paginator.posts %}
-    {% include post_summary.html %}
-  {% endfor %}
-
-  {% if paginator.next_page or paginator.previous_page %}
-    {% include paginator.html %}
-  {% endif %}
+  <div class="module">
+    <ul class="unstyled category-listing">
+      {% for post in site.posts %}
+        <li class="post-listing">
+          <span class="post-date">{{ post.date | date: "%b %d %Y" }}</span>
+          <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 </div>
 
