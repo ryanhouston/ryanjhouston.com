@@ -20,20 +20,24 @@
     </div>
   </div>
 
-  {% if site.categories %}
   <div class="sidebar-module">
     <h3>Post Topics</h3>
     <div id="categories">
       <ul id="category-list">
-      {% for category in site.categories %}
         <li>
-          <a href="/categories/{{ category | first }}">{{ category | first }}</a>
-          ( {{ category | last | size }} )
+          <a href="/categories/general">general</a>
+          ( {{ site.categories.general | size }} )
         </li>
-      {% endfor %}
+        <li>
+          <a href="/categories/brewing">brewing</a>
+          ( {{ site.categories.brewing | size }} )
+        </li>
+        <li>
+          <a href="/dnd">dnd</a>
+          ( {{ site.categories.dnd | size }} )
+        </li>
       </ul>
     </div>
   </div>
-  {% endif %}
 
 </div>
