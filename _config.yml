@@ -5,22 +5,6 @@ exclude:
 markdown: kramdown
 timezone: America/New_York
 collections:
-  dnd:
-    output: true
   recipes:
     output: true
-defaults:
-  -
-    scope:
-      path: "dnd"
-      type: "posts"
-    values:
-      category: "dnd"
-      layout: "post"
-  -
-    scope:
-      path: "_posts/dnd"
-      type: "posts"
-    values:
-      hide_in_index: true
 
