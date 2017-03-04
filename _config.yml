@@ -2,6 +2,7 @@ exclude:
   - Rakefile
   - Gemfile
   - Gemfile.lock
+  - Session.vim
 markdown: kramdown
 timezone: America/New_York
 collections:
