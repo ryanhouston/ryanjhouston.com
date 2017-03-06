@@ -18,7 +18,7 @@ class Post
   end
 
   def directory
-    @path ||= File.dirname(__FILE__) + "/../_posts/#{@category}/"
+    @path ||= File.dirname(__FILE__) + "/../#{@category}/_posts/"
   end
 
   def basename
@@ -31,7 +31,12 @@ class Post
     @fullpath ||= directory + basename + "." + @extension
   end
 
+  def ensure_category_exists
+    FileUtils.mkdir_p(directory) unless Dir.exists?(directory)
+  end
+
   def write_stub
+    ensure_category_exists
     stub_path = fullpath
     File.open(stub_path, "w") do |stub|
       stub.write(front_matter)
