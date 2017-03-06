@@ -1,0 +1,22 @@
+---
+layout: default
+---
+{% for category in site.categories %}
+  <section class="category-listing">
+    {% assign category_name = category | first %}
+    <h2><a href="#{{ category_name }}">{{ category_name }}</a></h2>
+    <ul>
+    {% for posts in category %}
+      {% for post in posts %}
+        {% if post.url %}
+          <li class="category-post">
+            <span class="post-date">{{ post.date | date: "%b %d %Y" }}</span>
+            <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+    </ul>
+  </section>
+{% endfor %}
+
