@@ -2,138 +2,104 @@
 layout: post
 ---
 
-<div class="brew-session">
-
-  {% if page.beer.vitals %}
-  <h3>{{ page.beer.vitals.style }}</h3>
-  <hr />
-
-  <h4>Vitals</h4>
-
-  <div class="beer-vitals">
-
-    <div class="row">
-      <div class="span3">
-        <span class="label">Batch Type</span>
-        <span class="pull-right">{{ page.beer.vitals.type }}</span>
-      </div>
-
-      <div class="span3">
-        <span class="label">Batch Size</span>
-        <span class="pull-right">{{ page.beer.vitals.batch-size }}</span>
-      </div>
+<h3 class="brew-beerstyle">{{ page.beer.vitals.style }}</h3>
+{% if page.beer.vitals %}
+  <section class="brew-vitals">
+    <h4>Vitals</h4>
+    <div class="brew-batch-type">
+      <dt>Batch Type</dt>
+      <dd>{{ page.beer.vitals.type }}</dd>
     </div>
 
-    <div class="row">
-      <div class="span3">
-        <span class="label">Boil Size</span>
-        <span class="pull-right">{{ page.beer.boil.pre-volume }}</span>
-      </div>
-
-      <div class="span3">
-        <span class="label">Boil Length</span>
-        <span class="pull-right">{{ page.beer.boil.length }}</span>
-      </div>
+    <div class="brew-batch-size">
+      <dt>Batch Size</dt>
+      <dd>{{ page.beer.vitals.batch-size }}</dd>
     </div>
 
-    <div class="row">
-      <div class="span3">
-        <span class="label">IBUs</span>
-        <span class="pull-right">{{ page.beer.vitals.IBUs }}</span>
-      </div>
-
-      <div class="span3">
-        <span class="label">SRM</span>
-        <span class="pull-right">{{ page.beer.vitals.SRM }}</span>
-      </div>
+    <div class="brew-boil-size">
+      <dt>Boil Size</dt>
+      <dd>{{ page.beer.boil.pre-volume }}</dd>
     </div>
 
-    <div class="row clearfix">
-      <div class="span3">
-        <span class="label">Expected SG</span>
-        <span class="pull-right">{{ page.beer.vitals.OG-target }} </span>
-      </div>
-
-      <div class="span3">
-        <span class="label">Actual SG</span>
-        <span class="pull-right">{{ page.beer.vitals.OG-actual }}</span>
-      </div>
+    <div class="brew-boil-length">
+      <dt>Boil Length</dt>
+      <dd>{{ page.beer.boil.length }}</dd>
     </div>
 
-    <div class="row">
-      <div class="span3">
-        <span class="label">Expected FG</span>
-        <span class="pull-right">{{ page.beer.vitals.FG-target }}</span>
-      </div>
-
-      <div class="span3">
-        <span class="label">Actual FG</span>
-        <span class="pull-right">{{ page.beer.vitals.FG-actual }}</span>
-      </div>
-
-      <div class="span3">
-        <span class="label">Actual %ABV</span>
-        <span class="pull-right">{{ page.beer.vitals.abv-actual }}</span>
-      </div>
+    <div class="brew-ibus">
+      <dt>IBUs</dt>
+      <dd>{{ page.beer.vitals.IBUs }}</dd>
     </div>
 
-  </div>
-
-  {% endif %}
-
-  {% if page.beer.mash %}
-  <hr />
-  <div id="brew-log-mash">
-    <div class="brew-section-header">
-      <h3 class="span1">Mash</h3>
-      <em>{{ page.beer.mash.description }}</em>
-    </div>
-    <br />
-
-    <div class="row">
-      <div class="span4">
-        <span class="label">Strike Water Volume</span>
-        <span class="pull-right">{{ page.beer.mash.strike-volume }}</span>
-      </div>
-
-      <div class="span4">
-        <span class="label">Target Mash Temperature</span>
-        <span class="pull-right">{{ page.beer.mash.rest-temp-target }}</span>
-      </div>
+    <div class="brew-srm">
+      <dt>SRM</dt>
+      <dd>{{ page.beer.vitals.SRM }}</dd>
     </div>
 
-    <div class="row">
-      <div class="span4">
-        <span class="label">Strike Water Temperature</span>
-        <span class="pull-right">{{ page.beer.mash.strike-temp }}</span>
-      </div>
-
-      <div class="span4">
-        <span class="label">Actual Mash Temperature</span>
-        <span class="pull-right">{{ page.beer.mash.rest-temp-actual }}</span>
-      </div>
+    <div class="brew-expected-sg">
+      <dt>Expected SG</dt>
+      <dd>{{ page.beer.vitals.OG-target }} </dd>
     </div>
 
-    <br />
-    {% for round in page.beer.sparges %}
-      <strong>Sparge Round {{ forloop.index }}</strong>
-      <div class="row">
-        <div class="span4">
-          <span class="label">Sparge Volume</span>
-          <span class="pull-right">{{ round.volume }}</span>
-        </div>
+    <div class="brew-actual-sg">
+      <dt>Actual SG</dt>
+      <dd>{{ page.beer.vitals.OG-actual }}</dd>
+    </div>
 
-        <div class="span4">
-          <span class="label">Sparge Temperature</span>
-          <span class="pull-right">{{ round.temperature }}</span>
-        </div>
-      </div>
-    {% endfor %}
+    <div class="brew-expected-fg">
+      <dt>Expected FG</dt>
+      <dd>{{ page.beer.vitals.FG-target }}</dd>
+    </div>
 
-  </div>
-  {% endif %}
+    <div class="brew-actual-fg">
+      <dt>Actual FG</dt>
+      <dd>{{ page.beer.vitals.FG-actual }}</dd>
+    </div>
 
-  {{ content }}
+    <div class="brew-actual-abv">
+      <dt>Actual %ABV</dt>
+      <dd>{{ page.beer.vitals.abv-actual }}</dd>
+    </div>
 
-</div>
+  </section>
+{% endif %}
+
+{% if page.beer.mash %}
+  <section class="brew-mash">
+    <h3>Mash</h3>
+    <h4>{{ page.beer.mash.description }}</h4>
+    <dl>
+      <dt class="label">Strike Water Volume</dt>
+      <dd class="pull-right">{{ page.beer.mash.strike-volume }}</dd>
+
+      <dt class="label">Target Mash Temperature</dt>
+      <dd class="pull-right">{{ page.beer.mash.rest-temp-target }}</dd>
+
+      <dt class="label">Strike Water Temperature</dt>
+      <dd class="pull-right">{{ page.beer.mash.strike-temp }}</dd>
+
+      <dt class="label">Actual Mash Temperature</dt>
+      <dd class="pull-right">{{ page.beer.mash.rest-temp-actual }}</dd>
+    <dl>
+  </section>
+{% endif %}
+
+{% if page.beer.sparges %}
+  <section class="brew-sparge">
+  {% for round in page.beer.sparges %}
+    <div class="brew-sparge-round">
+      <h4>Sparge Round {{ forloop.index }}</h4>
+      <dl>
+        <dt>Sparge Volume</dt>
+        <dd>{{ round.volume }}</dd>
+
+        <dt>Sparge Temperature</dt>
+        <dd>{{ round.temperature }}</dd>
+      </dl>
+    </div>
+  {% endfor %}
+  </section>
+{% endif %}
+
+{{ content }}
 

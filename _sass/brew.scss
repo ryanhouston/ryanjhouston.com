@@ -1,0 +1,16 @@
+.brew-vitals {
+  & > div {
+    width: 45%;
+    display: inline-block;
+  }
+}
+
+.brew-vitals,
+.brew-mash,
+.brew-sparge {
+  dt, dd {
+    display: inline-block;
+    min-width: 45%;
+  }
+
+}

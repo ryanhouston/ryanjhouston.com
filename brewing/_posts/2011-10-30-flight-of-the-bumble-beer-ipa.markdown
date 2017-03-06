@@ -42,25 +42,27 @@ beer:
 
 ---
 
-#### Recipe Printout
+### Recipe Printout
     Ingredients:
     ------------
-    Amount        Item                                      Type         % or IBU      
-    9 lbs         Pale Malt 2-Row (Rahr) (2.0 SRM)          Grain        67.93 %       
-    2 lbs         Vienna Malt (Weyermann) (3.0 SRM)         Grain        15.09 %       
-    12.0 oz       Caramel Malt - 40L (Briess) (40.0 SRM)    Grain        5.66 %        
-    8.0 oz        Caramel Malt - 20L (Briess) (20.0 SRM)    Grain        3.77 %        
-    8.0 oz        Carapils (Briess) (1.5 SRM)               Grain        3.77 %        
-    8.0 oz        Honey Malt (25.0 SRM)                     Grain        3.77 %        
-    1.00 oz       Chinook [10.50 %]  (60 min)               Hops         32.7 IBU      
-    1.00 oz       Falconer's Flight [10.50 %]  (60 min) (AroHops          -            
-    1.25 oz       Falconer's Flight [10.50 %]  (20 min) (FirHops         27.3 IBU      
-    1.25 oz       Falconer's Flight [10.50 %]  (10 min)     Hops         14.8 IBU      
-    1.25 oz       Falconer's Flight [10.50 %]  (5 min)      Hops         8.2 IBU       
-    1.00 items    Whirlfloc Tablet (Boil 15.0 min)          Misc                       
-    1 Pkgs        American Ale II (Wyeast Labs #1272) [StartYeast-Ale                  
+    Amount        Item                                      Type         % or IBU
+    9 lbs         Pale Malt 2-Row (Rahr) (2.0 SRM)          Grain        67.93 %
+    2 lbs         Vienna Malt (Weyermann) (3.0 SRM)         Grain        15.09 %
+    12.0 oz       Caramel Malt - 40L (Briess) (40.0 SRM)    Grain        5.66 %
+    8.0 oz        Caramel Malt - 20L (Briess) (20.0 SRM)    Grain        3.77 %
+    8.0 oz        Carapils (Briess) (1.5 SRM)               Grain        3.77 %
+    8.0 oz        Honey Malt (25.0 SRM)                     Grain        3.77 %
+    1.00 oz       Chinook [10.50 %]  (60 min)               Hops         32.7 IBU
+    1.00 oz       Falconer's Flight [10.50 %]  (60 min) (AroHops          -
+    1.25 oz       Falconer's Flight [10.50 %]  (20 min) (FirHops         27.3 IBU
+    1.25 oz       Falconer's Flight [10.50 %]  (10 min)     Hops         14.8 IBU
+    1.25 oz       Falconer's Flight [10.50 %]  (5 min)      Hops         8.2 IBU
+    1.00 items    Whirlfloc Tablet (Boil 15.0 min)          Misc
+    1 Pkgs        American Ale II (Wyeast Labs #1272) [StartYeast-Ale
 
 
-#### Yeast starter
-No starter makes me a sad panda. I can't get to the LHBS during the week so I could pick up any yeast the day before brewday and didn't have time to make a starter.
+### Yeast starter
+No starter makes me a sad panda. I can't get to the LHBS during the week so I
+could pick up any yeast the day before brewday and didn't have time to make a
+starter.
 
