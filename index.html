@@ -1,20 +1,21 @@
 ---
 layout: default
-title: ryanjhouston.com
 ---
 
-<div id="content" class="span12">
-  <div class="module">
-    <ul class="unstyled category-listing">
-      {% for post in site.posts %}
-        {% unless post.hide_in_index == true %}
-          <li class="post-listing">
-            <span class="post-date">{{ post.date | date: "%b %d %Y" }}</span>
-            <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
-          </li>
-        {% endunless %}
+<section class="recent-posts">
+  <h2>Recent Posts</h2>
+  <ul>
+  {% for post in site.posts %}
+    <li class="post-listing">
+      <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
+      <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
+      {% for category in post.categories %}
+        <span class="post-tag">
+          <a href="/tags#{{ category }}">{{category}}</a>
+        </span>
       {% endfor %}
-    </ul>
-  </div>
-</div>
+    </li>
+  {% endfor %}
+  </ul>
+</section>
 

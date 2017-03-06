@@ -125,7 +125,32 @@ dt {
   padding: 0 0 0 20px;
 }
 
-.category-listing ul {
+.category-listing ul,
+.recent-posts ul {
   list-style: none;
   padding: 0 0 0 20px;
+}
+
+.post-listing {
+  margin-bottom: 5px;
+  .post-date {
+    display: inline-block;
+    min-width: 150px;
+  }
+
+  .post-title {
+    font-size: 1.2em;
+  }
+
+  @media(max-width: 600px) {
+    .post-date { display: block; }
+    .post-title { display: block; }
+  }
+}
+.post-tag {
+  font-size: .9em;
+  padding: 0 4px;
+  background-color: lighten($site-background-color, 20%);
+  border-radius: 4px;
+  margin: 0 4px;
 }

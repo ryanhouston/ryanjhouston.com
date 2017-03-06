@@ -9,8 +9,8 @@ layout: default
     {% for posts in category %}
       {% for post in posts %}
         {% if post.url %}
-          <li class="category-post">
-            <span class="post-date">{{ post.date | date: "%b %d %Y" }}</span>
+          <li class="post-listing">
+            <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
             <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
           </li>
         {% endif %}
