@@ -5,7 +5,11 @@ exclude:
   - Session.vim
 markdown: kramdown
 timezone: America/New_York
+title: ryanjhouston.com
+author: Ryan Houston
+description: Software development, homebrewing, and life that happens in between.
 collections:
   recipes:
     output: true
-
+gems:
+  - jekyll-avatar

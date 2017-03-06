@@ -1,7 +1,35 @@
----
-layout: base
----
-<div id="content" class="span12">
-  {{ content }}
-</div>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>{{ page.title | default: site.title }} by {{ site.author }}</title>
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  </head>
+  <body>
+    <header id="header">
+      <h1><a href="/">{{ site.author }}</a></h1>
+      <p>{{ site.description }}</p>
+    </header>
 
+    <section id="content">
+      {{ content }}
+    </section>
+
+    <footer id="footer">
+      <h3>About</h3>
+      <p>Ryan is a software engineer, homebrewer, and general tinkerer in the
+      Washington D.C.metro area.</p>
+      {% avatar ryanhouston size=100 %}
+      <ul id="author-contacts">
+        <li>Email: ryan@ryanjhouston.com</li>
+        <li>Github: <a href="https://github.com/ryanhouston">ryanhouston</a></li>
+        <li>Twitter: <a href="https://twitter.com/houston_ryan">@houston_ryan</a></li>
+        <li><a href="https://www.linkedin.com/in/ryan-houston-415b415/">LinkedIn</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

@@ -2,11 +2,11 @@
 layout: default
 ---
 
-<div class="post">
-
-  {% include post_heading.html %}
-
-  {{ content }}
-
-</div>
-
+<article class="post">
+  <header class="post-header">
+    {% include post_heading.html %}
+  </header>
+  <section class="post-content">
+    {{ content }}
+  </section>
+</article>

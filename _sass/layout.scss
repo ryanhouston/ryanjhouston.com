@@ -1,0 +1,126 @@
+@import "variables";
+@import "rouge-base16-dark";
+
+body {
+  padding: 0 0 20px 0;
+  margin: 0;
+  font: $default-font-size "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color: $default-font-color;
+  background: $site-background-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $header-color;
+  margin: 0 0 10px;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+h3 {
+  font-size: 1.3em;
+  color: darken($header-color, 10%);
+}
+
+p, ul, ol, table, pre, dl, section, article {
+  margin:0 0 20px;
+}
+
+a {
+  color: $link-color;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+
+  &:hover {
+    color: darken($link-color, 10%)
+  }
+}
+
+section img {
+  max-width: 100%;
+}
+
+blockquote {
+  border-left: 3px solid $link-color;
+  margin: 0;
+  padding: 0 0 0 20px;
+  font-style: italic;
+}
+
+pre {
+  padding: 8px 15px;
+  background: #191919;
+  border-radius: 2px;
+  border: 1px solid #121212;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.3);
+  overflow: auto;
+  overflow-y: hidden;
+
+  code {
+    color: #efefef;
+    text-shadow: 0px 1px 0px #000;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  padding: 5px 10px;
+  border-bottom: 1px solid #434343;
+  color: darken($default-font-color, 30%);
+  font-weight: bold;
+}
+
+td {
+  text-align: left;
+  padding: 5px 10px;
+  border-bottom: 1px solid #434343;
+}
+
+dt {
+  font-weight: bold;
+  color: darken($default-font-color, 30%);
+}
+
+#header, #content, #footer {
+  max-width: $site-width;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#header {
+  background: lighten($site-background-color, 5%);
+  border-bottom: 4px solid lighten($site-background-color, 10%);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .25);
+  max-width: 100%;
+
+  h1, p {
+    max-width: $site-width;
+    margin: 0 auto;
+  }
+
+  h1 { font-weight: bold; }
+}
+
+#footer .avatar {
+  float: left;
+  margin-right: 40px;
+}
+
+#author-contacts {
+  list-style: none;
+  padding: 0 0 0 20px;
+}
