@@ -1,6 +1,3 @@
-@import "variables";
-@import "rouge-base16-dark";
-
 body {
   padding: 0 0 20px 0;
   margin: 0;
@@ -11,7 +8,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: $header-color;
+  color: $headers-color;
   margin: 0 0 10px;
   font-weight: normal;
 }
@@ -26,7 +23,7 @@ h2 {
 
 h3 {
   font-size: 1.3em;
-  color: darken($header-color, 10%);
+  color: darken($headers-color, 10%);
 }
 
 p, ul, ol, table, pre, dl, section, article {
@@ -55,25 +52,25 @@ blockquote {
 }
 
 code {
-  color: #efefef;
+  color: $soft-white;
   margin: 0 4px;
   padding: 4px 6px;
-  background: #191919;
-  border-radius: 2px;
+  background: $soft-black;
+  border-radius: $border-radius;
 }
 
 pre {
   padding: 8px 15px;
-  background: #191919;
-  border-radius: 2px;
-  border: 1px solid #121212;
+  background: $soft-black;
+  border-radius: $border-radius;
+  border: 1px solid black;
   box-shadow: inset 0 1px 3px rgba(0,0,0,.3);
   overflow: auto;
   overflow-y: hidden;
 
   code {
-    color: #efefef;
-    text-shadow: 0px 1px 0px #000;
+    color: $soft-white;
+    text-shadow: 0px 1px 0px black;
     margin: 0;
     padding: 0;
   }
@@ -87,7 +84,7 @@ table {
 th {
   text-align: left;
   padding: 5px 10px;
-  border-bottom: 1px solid #434343;
+  border-bottom: 1px solid $border-gray;
   color: darken($default-font-color, 30%);
   font-weight: bold;
 }
@@ -95,7 +92,7 @@ th {
 td {
   text-align: left;
   padding: 5px 10px;
-  border-bottom: 1px solid #434343;
+  border-bottom: 1px solid $border-gray;
 }
 
 dt {
@@ -111,7 +108,7 @@ dt {
 
 #header {
   background: lighten($site-background-color, 5%);
-  border-bottom: 4px solid lighten($site-background-color, 10%);
+  border-bottom: 4px solid lighten($border-gray, 10%);
   box-shadow: 0 1px 3px rgba(0, 0, 0, .25);
   max-width: 100%;
 
@@ -134,32 +131,3 @@ dt {
   padding: 0 0 0 20px;
 }
 
-.category-listing ul,
-.recent-posts ul {
-  list-style: none;
-  padding: 0 0 0 20px;
-}
-
-.post-listing {
-  margin-bottom: 5px;
-  .post-date {
-    display: inline-block;
-    min-width: 150px;
-  }
-
-  .post-title {
-    font-size: 1.2em;
-  }
-
-  @media(max-width: 600px) {
-    .post-date { display: block; }
-    .post-title { display: block; }
-  }
-}
-.post-tag {
-  font-size: .9em;
-  padding: 0 4px;
-  background-color: lighten($site-background-color, 20%);
-  border-radius: 4px;
-  margin: 0 4px;
-}
