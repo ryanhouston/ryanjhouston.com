@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head>
   <body>
+
     <header id="header">
       <h1><a href="/">{{ site.author }}</a></h1>
       <p>{{ site.description }}</p>
@@ -20,17 +21,7 @@
       {{ content }}
     </section>
 
-    <footer id="footer">
-      <h3>About</h3>
-      <p>Ryan is a software engineer, homebrewer, and general tinkerer in the
-      Washington D.C.metro area.</p>
-      {% avatar ryanhouston size=100 %}
-      <ul id="author-contacts">
-        <li>Email: ryan@ryanjhouston.com</li>
-        <li>Github: <a href="https://github.com/ryanhouston">ryanhouston</a></li>
-        <li>Twitter: <a href="https://twitter.com/houston_ryan">@houston_ryan</a></li>
-        <li><a href="https://www.linkedin.com/in/ryan-houston-415b415/">LinkedIn</a></li>
-      </ul>
-    </footer>
+    {% include footer.html %}
+
   </body>
 </html>
