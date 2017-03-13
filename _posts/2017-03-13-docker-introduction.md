@@ -5,6 +5,22 @@ tags: [docker, dev]
 category: dev
 ---
 
+## Why use Docker?
+
+There has been plenty written elsewhere about Docker in general and the choice
+of Docker against other tools like Vagrant, Ansible, etc. In short, Docker
+allows running of containers that provide specific environments and
+dependencies required to run an application, either in production or in a simple
+to manage development environment. These containers are generally lightweight,
+composable, and disposable. This keeps the host system (perhaps your laptop)
+isolated and clean by not locally installing all kinds of dependencies needed
+for specific projects or just when trying something new. The dependencies are
+installed and ran inside the disposable container instead.
+
+Here I've made some notes on a quick introduction to Docker by using a container
+to run [Jekyll][jekyll-docs], which is the tool that generates this site. See more at the
+[Docker docs][docker-docs].
+
 ## Installing Docker CE
 
 Follow the [Ubuntu installation instructions][docker-ubuntu].
@@ -61,5 +77,7 @@ downloaded, the container comes up pretty quickly even if the `--rm` option is
 used. The main difference in this particular case is that the ruby gems will
 have to be reinstalled when fresh containers are used.
 
+[docker-docs]: https://docs.docker.com/engine/getstarted/#flavors-of-docker
+[jekyll-docs]: http://jekyllrb.com
 [docker-jekyll]: https://hub.docker.com/r/jekyll/jekyll/
 [docker-ubuntu]: https://store.docker.com/editions/community/docker-ce-server-ubuntu?tab=description
