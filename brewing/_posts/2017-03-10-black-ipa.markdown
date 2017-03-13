@@ -1,0 +1,63 @@
+---
+title: Black IPA
+layout: brew
+category: brewing
+
+beer:
+  vitals:
+    style: Black IPA
+    type: All Grain
+    batch-size: 5.5 gal
+    OG-target: 1.064
+    OG-actual: 1.062
+    FG-target: 1.016
+    FG-actual:
+    abv-actual:
+    IBUs: 36.6
+    SRM: 71.4
+
+  mash:
+    description: "Single infusion batch sparge"
+    water-grist-ratio: 0.38
+    strike-volume: 4.2 gal
+    strike-temp: 168F
+    rest-temp-target: 154F
+    rest-temp-actual: 153F
+    length: 60 min
+
+  sparges:
+    - volume: 2.7 gal
+      temperature: 190F
+    - volume: 2.7 gal
+      temperature: 170F
+
+  boil:
+    length: 60 min
+    pre-volume: 7.53 gal
+    pre-gravity-target: 1.051
+    pre-gravity-actual: '?'
+    post-volume: 6.0
+---
+
+## Recipe Printout
+
+    Ingredients:
+    ------------
+    Amount        Item                                      Type         % or IBU
+    11 lbs 8.0 oz Pale Malt 2-Row (Rahr) (2.0 SRM)          Grain        85.19 %
+    1 lbs         Carafa Special III (Weyermann) (470.0 SRM)Grain        7.41 %
+    8.0 oz        Caramel Malt - 120L (Briess) (120.0 SRM)  Grain        3.70 %
+    8.0 oz        Caramel Malt - 60L (Briess) (60.0 SRM)    Grain        3.70 %
+    0.50 oz       Simcoe [13.00 %]  (60 min)                Hops         20.2 IBU
+    1.00 oz       Simcoe [13.00 %]  (60 min) (First Wort HopHops         44.4 IBU
+    1.00 oz       Citra [11.00 %]  (5 min)                  Hops         6.8 IBU
+    0.50 oz       Citra [11.00 %]  (0 min)                  Hops          -
+    1 Pkgs        American Ale II (Wyeast Labs #1272)       Yeast-Ale
+
+## Notes
+
+The refractometer seemed to give bad readings and might be broken or need
+calibration so I didn't get a pre-boil gravity reading.
+
+Fermentation was going strong by morning. I swapped the airlock for a blow-off
+tube just in time before the airlock clogged and blew to spray the ceiling.
