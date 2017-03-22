@@ -3,7 +3,7 @@
 </h2>
 <section class="post-meta">
   <div class="post-date">{{ page.date | date: "%B %d, %Y" }}</div>
-  {% for category in page.categories %}
-    <a href="/tags#{{ category }}" class="post-tag"> {{ category }} </a>
+  {% for tag in page.tags %}
+    <a href="/tags#{{ tag }}" class="post-tag"> {{ tag }} </a>
   {% endfor %}
 </section>

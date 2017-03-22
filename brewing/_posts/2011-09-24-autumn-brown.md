@@ -2,6 +2,7 @@
 title: Autumn Brown
 layout: post
 category: brewing
+tags: brewing
 date: 2011-09-24
 disqus-id: 2011-09-24-autumn-brown
 ---

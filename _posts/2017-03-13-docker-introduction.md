@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Docker Introduction
-tags: [docker, dev]
-category: dev
+tags: dev
 ---
 
 ## Why use Docker?
@@ -76,6 +75,14 @@ are done with it via `sudo docker rm <container-id>`. Once the image has been
 downloaded, the container comes up pretty quickly even if the `--rm` option is
 used. The main difference in this particular case is that the ruby gems will
 have to be reinstalled when fresh containers are used.
+
+## Tips
+
+- Add user to `docker` group to make `sudo` unnecessary. It is also safer to not
+run containers as root unless necessary.
+  `sudo adduser <username> docker`
+- `docker start -a <container>` to start container and immediately attach
+  process
 
 [docker-docs]: https://docs.docker.com/engine/getstarted/#flavors-of-docker
 [jekyll-docs]: http://jekyllrb.com

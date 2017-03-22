@@ -2,12 +2,11 @@
 title: Robust Porter
 layout: post
 category: brewing
+tags: brewing
 date: 2011-10-10
-disqus-id: 2011-10-10-robust-porter
 OG: 1.065
 FG: 1.014
 ABV: 6.66%
-
 ---
 
 

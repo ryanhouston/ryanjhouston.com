@@ -1,14 +1,14 @@
 ---
 layout: default
 ---
-{% for category in site.categories %}
+{% for tag in site.tags %}
   <section class="category-listing">
-    {% assign category_name = category | first %}
-    <h2 id="{{category_name}}">
-      <a href="#{{ category_name }}">{{ category_name }}</a>
+    {% assign tag_name = tag | first %}
+    <h2 id="{{tag_name}}">
+      <a href="#{{ tag_name }}">{{ tag_name }}</a>
     </h2>
     <ul>
-    {% for posts in category %}
+    {% for posts in tag %}
       {% for post in posts %}
         {% if post.url %}
           <li class="post-listing">

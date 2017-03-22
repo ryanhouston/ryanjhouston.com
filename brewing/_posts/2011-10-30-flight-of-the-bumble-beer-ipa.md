@@ -2,8 +2,8 @@
 title: Flight of the Bumble Beer IPA
 layout: brew
 category: brewing
+tags: brewing
 date: 2011-10-30
-disqus-id: 2011-10-30-flight-of-the-bumble-beer-ipa
 
 beer:
   vitals:

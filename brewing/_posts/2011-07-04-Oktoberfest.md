@@ -2,6 +2,7 @@
 title: Oktoberfest/Marzen
 layout: post
 category: brewing
+tags: brewing
 disqus-id: 2011-07-04-Oktoberfest
 ---
     BeerSmith Recipe Printout - http://www.beersmith.com

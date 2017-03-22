@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Forward root mail from Ubuntu Server 14.04
-category: sysadmin
+tags: sysadmin
 ---
 
 I recently found my home file server in a sorry state. My backup drive had died,

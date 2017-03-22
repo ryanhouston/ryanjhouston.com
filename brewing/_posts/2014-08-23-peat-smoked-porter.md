@@ -2,6 +2,7 @@
 title: Peat-Smoked Porter
 layout: post
 category: brewing
+tags: brewing
 date: 2014-08-23
 ---
 

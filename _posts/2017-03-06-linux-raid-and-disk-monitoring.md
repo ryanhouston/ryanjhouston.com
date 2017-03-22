@@ -1,7 +1,7 @@
 ---
 title: Linux RAID and disk monitoring
 layout: post
-category: sysadmin
+tags: sysadmin
 date: 2017-03-06
 ---
 

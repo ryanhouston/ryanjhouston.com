@@ -11,9 +11,9 @@ layout: default
     <li class="post-listing">
       <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
       <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
-      {% for category in post.categories %}
+      {% for tag in post.tags %}
         <span class="post-tag">
-          <a href="/tags#{{ category }}">{{category}}</a>
+          <a href="/tags#{{ tag }}">{{tag}}</a>
         </span>
       {% endfor %}
     </li>
