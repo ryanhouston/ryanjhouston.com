@@ -24,12 +24,19 @@ to run [Jekyll][jekyll-docs], which is the tool that generates this site. See mo
 
 Follow the [Ubuntu installation instructions][docker-ubuntu].
 
+Be sure to add your user to `docker` group to avoid requiring `sudo`. It is
+probably safer not to run containers as root unless necessary.
+
+```
+sudo adduser `whoami` docker
+```
+
 ## Run Jekyll in a Docker container
 
 Simply run:
 
 ```
-sudo docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll \
+docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll \
   -it -p 127.0.0.1:4000:4000 jekyll/jekyll \
   jekyll server --drafts
 ```
@@ -61,30 +68,46 @@ stopped. You could then restart jekyll without having to wait for the container
 to rebuild by running
 
 ```
-sudo docker start <container-id>
+docker start <container-id>
 ```
 
-with the container ID that is shown for the jekyll container in `sudo docker ps
+with the container ID that is shown for the jekyll container in `docker ps
 -a`. This would run the container but you would not see any output. To see
-output from a running container, you can run `sudo docker attach <container-id>`.
-You could stop the container by running `sudo docker stop <container-id>`. All
-pretty simple stuff.
+output from a running container, you can run `docker attach <container-id>`. You
+can start the container and attach automatically by using the `-a` option.  You
+could stop the container by running `docker stop <container-id>`. All pretty
+simple stuff.
 
 If you did not provide the `--rm` option, the container can be removed when you
-are done with it via `sudo docker rm <container-id>`. Once the image has been
+are done with it via `docker rm <container-id>`. Once the image has been
 downloaded, the container comes up pretty quickly even if the `--rm` option is
 used. The main difference in this particular case is that the ruby gems will
 have to be reinstalled when fresh containers are used.
 
-## Tips
+## Docker Compose
 
-- Add user to `docker` group to make `sudo` unnecessary. It is also safer to not
-run containers as root unless necessary.
-  `sudo adduser <username> docker`
-- `docker start -a <container>` to start container and immediately attach
-  process
+The `docker run` command is kind of long and inconvenient to type every time you
+want to work on a jekyll site. [Docker Compose][docker-compose] can be used to
+simplify this so the single command `docker-compose up` will create or start the
+container as defined by a `docker-compose.yml` file, and run the jekyll server
+so everything is ready to work on the site.
+
+The `docker-compose.yml` file for the jekyll container looks something like
+this:
+
+```
+jekyll:
+  image: jekyll/jekyll:pages
+  command: jekyll server --drafts
+  ports:
+    - 4000:4000
+  volumes:
+    - .:/srv/jekyll
+```
+
 
 [docker-docs]: https://docs.docker.com/engine/getstarted/#flavors-of-docker
 [jekyll-docs]: http://jekyllrb.com
 [docker-jekyll]: https://hub.docker.com/r/jekyll/jekyll/
 [docker-ubuntu]: https://store.docker.com/editions/community/docker-ce-server-ubuntu?tab=description
+[docker-compose]: https://docs.docker.com/compose/overview/
