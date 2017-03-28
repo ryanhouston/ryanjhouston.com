@@ -14,7 +14,7 @@ class Post
     @category =  category || ''
     raise ArguementError, 'Post title must be provided' if post_title.nil?
     @title = post_title
-    @extension = 'markdown'
+    @extension = 'md'
   end
 
   def directory
