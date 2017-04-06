@@ -8,6 +8,17 @@ timezone: America/New_York
 title: ryanjhouston.com
 author: Ryan Houston
 description: Software development, homebrewing, and life that happens in between.
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "post"
+  -
+    scope:
+      path: "brewing"
+    values:
+      layout: "brew"
 collections:
   recipes:
     output: true
