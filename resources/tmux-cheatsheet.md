@@ -17,8 +17,8 @@ Use `<prefix> :` to get to tmux-command prompt first.
 ## Move Panes
 
   - `break-pane` break pane into new window
-  - `swap-window -s <source> -t <target>` (pretty self explanatory)
-  - `swap-window -t <target>` swaps the current pane with the target pane
+  - `swap-pane -s <source> -t <target>` (pretty self explanatory)
+  - `swap-pane -t <target>` swaps the current pane with the target pane
   - `<prefix> }` swap with pane to the left (or counter-clockwise) direction
   - `<prefix> {` swap with pane right (or clockwise) direction
   - `<prefix> q` will show pane numbers for use in above commands
