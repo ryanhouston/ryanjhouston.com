@@ -1,7 +1,12 @@
-jekyll:
-  image: jekyll/jekyll:pages
-  command: jekyll server --drafts
-  ports:
-    - 4000:4000
-  volumes:
-    - .:/srv/jekyll
+version: '3'
+services:
+  site:
+    image: jekyll/jekyll:latest
+    command: jekyll server --drafts
+    ports:
+      - 4000:4000
+      - 35729:35729
+      - 3000:3000
+      -   80:4000
+    volumes:
+      - .:/srv/jekyll
