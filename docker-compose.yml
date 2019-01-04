@@ -3,6 +3,9 @@ services:
   site:
     image: jekyll/jekyll:latest
     command: jekyll server --drafts
+    environment:
+      - "JEKYLL_UID=${UID}"
+      - "JEKYLL_GID=${GID}"
     ports:
       - 4000:4000
       - 35729:35729
